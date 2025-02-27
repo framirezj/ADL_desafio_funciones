@@ -19,6 +19,7 @@ con los colores morado, gris y café respectivamente. (1 Punto */
 const color = (letra) => {
 
     const divKey = document.querySelector('#key');
+    const divKeyOC = document.querySelector('#keyOtrosColores');
     
     if (letra === 'a') {
         divKey.style.backgroundColor = "pink";
@@ -26,6 +27,12 @@ const color = (letra) => {
         divKey.style.backgroundColor = "orange";
     } else if (letra === 'd') {
         divKey.style.backgroundColor = "skyblue";
+    }else if (letra === 'q') {
+        divKeyOC.style.backgroundColor = "violet";
+    }else if (letra === 'w') {
+        divKeyOC.style.backgroundColor = "gray";
+    }else if (letra === 'e') {
+        divKeyOC.style.backgroundColor = "brown";
     }
 
 }
